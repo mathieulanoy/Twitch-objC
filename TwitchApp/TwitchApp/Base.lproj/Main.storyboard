@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="luW-ax-Vft">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-zx-7HS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dgr-zx-7HS" secondAttribute="height" multiplier="16:9" id="xxB-BX-nwQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xxB-BX-nwQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="xxB-BX-nwQ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="luW-ax-Vft" secondAttribute="trailing" constant="-16" id="218-lb-xPy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="luW-ax-Vft" secondAttribute="bottom" id="Cpl-Kx-AKq"/>
+                            <constraint firstItem="Dgr-zx-7HS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="DYk-Kz-6kK"/>
+                            <constraint firstItem="luW-ax-Vft" firstAttribute="top" secondItem="Dgr-zx-7HS" secondAttribute="bottom" id="T9F-zf-NTT"/>
+                            <constraint firstItem="luW-ax-Vft" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="YCm-ql-a7d"/>
+                            <constraint firstItem="Dgr-zx-7HS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="bCi-IA-riF">
+                                <variation key="heightClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dgr-zx-7HS" secondAttribute="trailing" constant="-16" id="dWx-q1-Vwe"/>
+                            <constraint firstItem="Dgr-zx-7HS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="jvb-KO-baI"/>
+                            <constraint firstItem="Dgr-zx-7HS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="sww-y4-aeX"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Dgr-zx-7HS" secondAttribute="bottom" id="u1R-eF-xbf">
+                                <variation key="heightClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dgr-zx-7HS" secondAttribute="trailing" constant="-16" id="uzO-79-kcW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="luW-ax-Vft"/>
+                                <exclude reference="Dgr-zx-7HS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Cpl-Kx-AKq"/>
+                                <exclude reference="u1R-eF-xbf"/>
+                                <exclude reference="DYk-Kz-6kK"/>
+                                <exclude reference="bCi-IA-riF"/>
+                                <exclude reference="dWx-q1-Vwe"/>
+                                <exclude reference="jvb-KO-baI"/>
+                                <exclude reference="sww-y4-aeX"/>
+                                <exclude reference="uzO-79-kcW"/>
+                                <exclude reference="218-lb-xPy"/>
+                                <exclude reference="T9F-zf-NTT"/>
+                                <exclude reference="YCm-ql-a7d"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="Dgr-zx-7HS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="u1R-eF-xbf"/>
+                                <include reference="bCi-IA-riF"/>
+                                <include reference="jvb-KO-baI"/>
+                                <include reference="uzO-79-kcW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="luW-ax-Vft"/>
+                                <include reference="Dgr-zx-7HS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Cpl-Kx-AKq"/>
+                                <include reference="DYk-Kz-6kK"/>
+                                <include reference="dWx-q1-Vwe"/>
+                                <include reference="sww-y4-aeX"/>
+                                <include reference="218-lb-xPy"/>
+                                <include reference="T9F-zf-NTT"/>
+                                <include reference="YCm-ql-a7d"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="v_chat_container" destination="luW-ax-Vft" id="vnj-hI-jjl"/>
+                        <outlet property="v_player_container" destination="Dgr-zx-7HS" id="EhZ-Bm-Sp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="390"/>
+        </scene>
+    </scenes>
+</document>

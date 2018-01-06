@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4EC5C0C91A71994100EA0D02 /* Player Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4EC5C0CA1A71994100EA0D02 /* Build configuration list for PBXAggregateTarget "Player Framework" */;
+			buildPhases = (
+				4EC5C0CF1A71997500EA0D02 /* ShellScript */,
+			);
+			dependencies = (
+				4EC5C0DE1A719CB600EA0D02 /* PBXTargetDependency */,
+				4EC5C0CE1A71994C00EA0D02 /* PBXTargetDependency */,
+			);
+			name = "Player Framework";
+			productName = "Player Framework";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4EC5C09B1A71933200EA0D02 /* TwitchPlayerSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EC5C09A1A71933200EA0D02 /* TwitchPlayerSDK.h */; };
+		4EC5C0B21A7193B000EA0D02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC5C0B11A7193B000EA0D02 /* UIKit.framework */; };
+		4EC5C0B41A7193D600EA0D02 /* TwitchPlayerSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC5C09A1A71933200EA0D02 /* TwitchPlayerSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC5C0B81A71940900EA0D02 /* TTStreamPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC5C0B61A71940900EA0D02 /* TTStreamPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC5C0B91A71940900EA0D02 /* TTStreamPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5C0B71A71940900EA0D02 /* TTStreamPlayerView.m */; };
+		4EC5C0DF1A719D6C00EA0D02 /* TTStreamPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC5C0D11A719A9000EA0D02 /* TTStreamPlayerView.xib */; };
+		4EC5C0E21A719EC000EA0D02 /* TTPlayerServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC5C0E01A719EC000EA0D02 /* TTPlayerServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC5C0E31A719EC000EA0D02 /* TTPlayerServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5C0E11A719EC000EA0D02 /* TTPlayerServices.m */; };
+		4EC5C0E71A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC5C0E51A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.h */; };
+		4EC5C0E81A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5C0E61A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.m */; };
+		4EC5C0F51A71AA0C00EA0D02 /* VideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC5C0F31A71AA0C00EA0D02 /* VideoPlayerView.h */; };
+		4EC5C0F61A71AA0C00EA0D02 /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5C0F41A71AA0C00EA0D02 /* VideoPlayerView.m */; };
+		830029461A769B520030F07B /* TTStreamQualityCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 830029431A769B520030F07B /* TTStreamQualityCell.h */; };
+		830029471A769B520030F07B /* TTStreamQualityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 830029441A769B520030F07B /* TTStreamQualityCell.m */; };
+		830029481A769C350030F07B /* TTStreamQualityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830029451A769B520030F07B /* TTStreamQualityCell.xib */; };
+		832719C61A728C6800E75A63 /* twitchPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832719C51A728C6800E75A63 /* twitchPlayer.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EC5C0CD1A71994C00EA0D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC5C08F1A71933200EA0D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC5C0961A71933200EA0D02;
+			remoteInfo = TwitchPlayerSDK;
+		};
+		4EC5C0DD1A719CB600EA0D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC5C08F1A71933200EA0D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC5C0D51A719C1F00EA0D02;
+			remoteInfo = TwitchPlayerResources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EC5C0951A71933200EA0D02 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4EC5C09B1A71933200EA0D02 /* TwitchPlayerSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4EC5C0971A71933200EA0D02 /* libTwitchPlayerSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitchPlayerSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC5C09A1A71933200EA0D02 /* TwitchPlayerSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitchPlayerSDK.h; sourceTree = "<group>"; };
+		4EC5C0B11A7193B000EA0D02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4EC5C0B61A71940900EA0D02 /* TTStreamPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTStreamPlayerView.h; path = src/TTStreamPlayerView.h; sourceTree = "<group>"; };
+		4EC5C0B71A71940900EA0D02 /* TTStreamPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTStreamPlayerView.m; path = src/TTStreamPlayerView.m; sourceTree = "<group>"; };
+		4EC5C0D11A719A9000EA0D02 /* TTStreamPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TTStreamPlayerView.xib; path = src/TTStreamPlayerView.xib; sourceTree = "<group>"; };
+		4EC5C0D61A719C1F00EA0D02 /* TwitchPlayerSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitchPlayerSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC5C0D91A719C1F00EA0D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC5C0E01A719EC000EA0D02 /* TTPlayerServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTPlayerServices.h; path = src/TTPlayerServices.h; sourceTree = "<group>"; };
+		4EC5C0E11A719EC000EA0D02 /* TTPlayerServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTPlayerServices.m; path = src/TTPlayerServices.m; sourceTree = "<group>"; };
+		4EC5C0E51A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TwitchPlayerSDK.h"; path = "src/Utils/NSBundle+TwitchPlayerSDK.h"; sourceTree = "<group>"; };
+		4EC5C0E61A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TwitchPlayerSDK.m"; path = "src/Utils/NSBundle+TwitchPlayerSDK.m"; sourceTree = "<group>"; };
+		4EC5C0F31A71AA0C00EA0D02 /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoPlayerView.h; path = src/Views/Player/VideoPlayerView.h; sourceTree = "<group>"; };
+		4EC5C0F41A71AA0C00EA0D02 /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoPlayerView.m; path = src/Views/Player/VideoPlayerView.m; sourceTree = "<group>"; };
+		830029431A769B520030F07B /* TTStreamQualityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTStreamQualityCell.h; path = src/Views/Player/Render/TTStreamQualityCell.h; sourceTree = "<group>"; };
+		830029441A769B520030F07B /* TTStreamQualityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTStreamQualityCell.m; path = src/Views/Player/Render/TTStreamQualityCell.m; sourceTree = "<group>"; };
+		830029451A769B520030F07B /* TTStreamQualityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TTStreamQualityCell.xib; path = src/Views/Player/Render/TTStreamQualityCell.xib; sourceTree = "<group>"; };
+		832719C51A728C6800E75A63 /* twitchPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = twitchPlayer.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EC5C0941A71933200EA0D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5C0B21A7193B000EA0D02 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC5C0D31A719C1F00EA0D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EC5C08E1A71933200EA0D02 = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0D71A719C1F00EA0D02 /* TwitchPlayerResources */,
+				4EC5C0D01A719A2400EA0D02 /* Frameworks */,
+				4EC5C0991A71933200EA0D02 /* TwitchPlayerSDK */,
+				4EC5C0981A71933200EA0D02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EC5C0981A71933200EA0D02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0971A71933200EA0D02 /* libTwitchPlayerSDK.a */,
+				4EC5C0D61A719C1F00EA0D02 /* TwitchPlayerSDK.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC5C0991A71933200EA0D02 /* TwitchPlayerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0B51A7193DF00EA0D02 /* src */,
+				4EC5C09A1A71933200EA0D02 /* TwitchPlayerSDK.h */,
+			);
+			path = TwitchPlayerSDK;
+			sourceTree = "<group>";
+		};
+		4EC5C0B51A7193DF00EA0D02 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0F11A71A9E300EA0D02 /* Views */,
+				4EC5C0E41A719FE100EA0D02 /* Utils */,
+				4EC5C0B61A71940900EA0D02 /* TTStreamPlayerView.h */,
+				4EC5C0B71A71940900EA0D02 /* TTStreamPlayerView.m */,
+				4EC5C0D11A719A9000EA0D02 /* TTStreamPlayerView.xib */,
+				4EC5C0E01A719EC000EA0D02 /* TTPlayerServices.h */,
+				4EC5C0E11A719EC000EA0D02 /* TTPlayerServices.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4EC5C0D01A719A2400EA0D02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0B11A7193B000EA0D02 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC5C0D71A719C1F00EA0D02 /* TwitchPlayerResources */ = {
+			isa = PBXGroup;
+			children = (
+				832719C41A728C5100E75A63 /* Assets */,
+				4EC5C0D81A719C1F00EA0D02 /* Supporting Files */,
+			);
+			path = TwitchPlayerResources;
+			sourceTree = "<group>";
+		};
+		4EC5C0D81A719C1F00EA0D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0D91A719C1F00EA0D02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EC5C0E41A719FE100EA0D02 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0E51A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.h */,
+				4EC5C0E61A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4EC5C0F11A71A9E300EA0D02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4EC5C0F21A71A9E900EA0D02 /* Player */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4EC5C0F21A71A9E900EA0D02 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				830029421A769B1C0030F07B /* Render */,
+				4EC5C0F31A71AA0C00EA0D02 /* VideoPlayerView.h */,
+				4EC5C0F41A71AA0C00EA0D02 /* VideoPlayerView.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		830029421A769B1C0030F07B /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				830029431A769B520030F07B /* TTStreamQualityCell.h */,
+				830029441A769B520030F07B /* TTStreamQualityCell.m */,
+				830029451A769B520030F07B /* TTStreamQualityCell.xib */,
+			);
+			name = Render;
+			sourceTree = "<group>";
+		};
+		832719C41A728C5100E75A63 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				832719C51A728C6800E75A63 /* twitchPlayer.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EC5C0B31A7193BD00EA0D02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5C0F51A71AA0C00EA0D02 /* VideoPlayerView.h in Headers */,
+				4EC5C0E71A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.h in Headers */,
+				830029461A769B520030F07B /* TTStreamQualityCell.h in Headers */,
+				4EC5C0B81A71940900EA0D02 /* TTStreamPlayerView.h in Headers */,
+				4EC5C0E21A719EC000EA0D02 /* TTPlayerServices.h in Headers */,
+				4EC5C0B41A7193D600EA0D02 /* TwitchPlayerSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4EC5C0961A71933200EA0D02 /* TwitchPlayerSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC5C0AB1A71933200EA0D02 /* Build configuration list for PBXNativeTarget "TwitchPlayerSDK" */;
+			buildPhases = (
+				4EC5C0931A71933200EA0D02 /* Sources */,
+				4EC5C0941A71933200EA0D02 /* Frameworks */,
+				4EC5C0951A71933200EA0D02 /* CopyFiles */,
+				4EC5C0B31A7193BD00EA0D02 /* Headers */,
+				4EC5C0C81A71974600EA0D02 /* Build Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitchPlayerSDK;
+			productName = TwitchPlayerSDK;
+			productReference = 4EC5C0971A71933200EA0D02 /* libTwitchPlayerSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4EC5C0D51A719C1F00EA0D02 /* TwitchPlayerResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC5C0DA1A719C1F00EA0D02 /* Build configuration list for PBXNativeTarget "TwitchPlayerResources" */;
+			buildPhases = (
+				4EC5C0D21A719C1F00EA0D02 /* Sources */,
+				4EC5C0D31A719C1F00EA0D02 /* Frameworks */,
+				4EC5C0D41A719C1F00EA0D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitchPlayerResources;
+			productName = TwitchPlayerResources;
+			productReference = 4EC5C0D61A719C1F00EA0D02 /* TwitchPlayerSDK.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC5C08F1A71933200EA0D02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mathieu LANOY";
+				TargetAttributes = {
+					4EC5C0961A71933200EA0D02 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4EC5C0C91A71994100EA0D02 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4EC5C0D51A719C1F00EA0D02 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4EC5C0921A71933200EA0D02 /* Build configuration list for PBXProject "TwitchPlayerSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4EC5C08E1A71933200EA0D02;
+			productRefGroup = 4EC5C0981A71933200EA0D02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EC5C0961A71933200EA0D02 /* TwitchPlayerSDK */,
+				4EC5C0C91A71994100EA0D02 /* Player Framework */,
+				4EC5C0D51A719C1F00EA0D02 /* TwitchPlayerResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EC5C0D41A719C1F00EA0D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC5C0DF1A719D6C00EA0D02 /* TTStreamPlayerView.xib in Resources */,
+				832719C61A728C6800E75A63 /* twitchPlayer.xcassets in Resources */,
+				830029481A769C350030F07B /* TTStreamQualityCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EC5C0C81A71974600EA0D02 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		4EC5C0CF1A71997500EA0D02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n\n# Copy the resources bundle to the user's desktop\nditto \"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.bundle\" \\\n\"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.bundle\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EC5C0931A71933200EA0D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830029471A769B520030F07B /* TTStreamQualityCell.m in Sources */,
+				4EC5C0E31A719EC000EA0D02 /* TTPlayerServices.m in Sources */,
+				4EC5C0B91A71940900EA0D02 /* TTStreamPlayerView.m in Sources */,
+				4EC5C0E81A71A00400EA0D02 /* NSBundle+TwitchPlayerSDK.m in Sources */,
+				4EC5C0F61A71AA0C00EA0D02 /* VideoPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC5C0D21A719C1F00EA0D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC5C0CE1A71994C00EA0D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC5C0961A71933200EA0D02 /* TwitchPlayerSDK */;
+			targetProxy = 4EC5C0CD1A71994C00EA0D02 /* PBXContainerItemProxy */;
+		};
+		4EC5C0DE1A719CB600EA0D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC5C0D51A719C1F00EA0D02 /* TwitchPlayerResources */;
+			targetProxy = 4EC5C0DD1A719CB600EA0D02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4EC5C0A91A71933200EA0D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4EC5C0AA1A71933200EA0D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EC5C0AC1A71933200EA0D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		4EC5C0AD1A71933200EA0D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		4EC5C0CB1A71994100EA0D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4EC5C0CC1A71994100EA0D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4EC5C0DB1A719C1F00EA0D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TwitchPlayerResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = TwitchPlayerSDK;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4EC5C0DC1A719C1F00EA0D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = TwitchPlayerResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = TwitchPlayerSDK;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EC5C0921A71933200EA0D02 /* Build configuration list for PBXProject "TwitchPlayerSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5C0A91A71933200EA0D02 /* Debug */,
+				4EC5C0AA1A71933200EA0D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC5C0AB1A71933200EA0D02 /* Build configuration list for PBXNativeTarget "TwitchPlayerSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5C0AC1A71933200EA0D02 /* Debug */,
+				4EC5C0AD1A71933200EA0D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC5C0CA1A71994100EA0D02 /* Build configuration list for PBXAggregateTarget "Player Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5C0CB1A71994100EA0D02 /* Debug */,
+				4EC5C0CC1A71994100EA0D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC5C0DA1A719C1F00EA0D02 /* Build configuration list for PBXNativeTarget "TwitchPlayerResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC5C0DB1A719C1F00EA0D02 /* Debug */,
+				4EC5C0DC1A719C1F00EA0D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC5C08F1A71933200EA0D02 /* Project object */;
+}

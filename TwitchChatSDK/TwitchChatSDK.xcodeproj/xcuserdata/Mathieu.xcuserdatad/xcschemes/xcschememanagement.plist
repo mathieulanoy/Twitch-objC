@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Chat Framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>TwitchChatResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>TwitchChatSDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4EAF22BD1A6DB66B00B5A90F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EAF22C81A6DB66B00B5A90F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EAF22F21A6DBBD000B5A90F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8377C95D1A6FAB05001C1EA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
